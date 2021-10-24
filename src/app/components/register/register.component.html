@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+ 	<div class="row center">
+		<div class="col s6 offset-s3">
+			<div class="card">
+				<div class="col s6">
+					<h2>Quiz Registration</h2>
+				</div>
+				<div class="col s6">
+					<img src="https://image-us.24h.com.vn/upload/2-2021/images/2021-06-22/anh-1-1624348768-808-width650height1022.jpg" style="width: 250px; height: 250px;" class="offset-s3" >
+				</div>
+				<div class="card-content">
+					<form #registerForm="ngForm" (ngSubmit)="Onsubmit(name.value,email.value)" [formGroup] = "infoUser">
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">account_circle</i>
+								<input type="text" name="Name" #name ngModel required  formControlName="name">
+								<label >Name</label>
+								<div *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)">
+									<div *ngIf="f.name.errors">
+										<div *ngIf="f.name.errors.required">
+											<span>Bạn chưa Nhập Tên Người Chơi</span>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">Mail_outline</i>
+								<input type="text" name="Email" #email ngModel required [pattern]="emailPattern" formControlName="email">
+								<label >Email</label>
+								<div *ngIf="f.email.invalid && (f.email.dirty || f.email.touched)">
+									<div *ngIf="f.email.errors">
+										<div *ngIf="f.email.errors.required">
+											<span>email không được để rỗng</span>
+										</div>
+										<div *ngIf="f.email.errors.email">
+											<span>Không đúng định dạng</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<button class="btn-large btn-submit" type="submit" [disabled]="!registerForm.valid">Start</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

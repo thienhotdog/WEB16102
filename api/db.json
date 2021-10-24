@@ -1,0 +1,32 @@
+{
+  "questions": [
+    {
+      "question": "what's the captital of somalia",
+      "answer": [
+       {"answers":"A","options": "Nairobi1", "correct": false},
+        {"answers":"B","options": "Nairobi2", "correct": false},
+        {"answers":"C","options": "Nairobi3", "correct": false},
+        {"answers":"D","options": "Nairobi4", "correct": true}
+      ]
+    },
+    {
+      "question": "what's the captital of somalia 2",
+      "answer": [
+        {"answers":"A","options": "Nairobi1", "correct": false},
+        {"answers":"B","options": "Nairobi2", "correct": false},
+        {"answers":"C","options": "Nairobi3", "correct": false},
+        {"answers":"D","options": "Nairobi4", "correct": true}
+      ]
+    },
+     {
+      "question": "what's the captital of somalia 3",
+      "answer": [
+        {"answers":"A","options": "Nairobi1", "correct": false},
+        {"answers":"B","options": "Nairobi2", "correct": false},
+        {"answers":"C","options": "Nairobi3", "correct": false},
+        {"answers":"D","options": "Nairobi4", "correct": true}
+      ]
+    }
+  ],
+  "users": []
+}

@@ -1,0 +1,18 @@
+.tool_links>li{
+    display: inline-block;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.image{
+    width: 80px;
+    margin: 0 auto;
+}
+.tool_links>li :hover{
+    color: blue;
+}
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
