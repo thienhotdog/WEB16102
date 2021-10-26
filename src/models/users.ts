@@ -3,5 +3,7 @@ export interface Users {
 	name: string,
 	email:string,
 	question: number,
-	setiem: number
+	setiem: number,
 }
+		
+

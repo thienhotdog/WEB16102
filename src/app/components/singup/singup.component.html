@@ -16,18 +16,18 @@
         <div class="navbar-nav">
           <div class="nav-item text-nowrap d-flex">
         <a class="nav-link px-3" [routerLink]="['/register']">Enter Code</a>
-            <a class="nav-link px-3" [routerLink] ="['/sigin']">Log in</a>
+            <a class="nav-link px-3" [routerLink] ="['/signin']">Log in</a>
             <a class="nav-link px-3"[routerLink] ="['/signup']">Sign up</a>
           </div>
         </div>
       </header>
     <div class="col-6 mx-auto my-16">
-        <h2 class="capitalize text-5xl font-bold text-center mb-16">Đăng ký tài khoản</h2>
-        <form #registerForm="ngForm" (ngSubmit)="Onsubmit(name.value,email.value)" [formGroup] = "infoUser">
+        <h2 class="capitalize text-5xl font-bold text-center mb-16">Đăng Ký</h2>
+        <form #registerForm="ngForm" (ngSubmit)="Onsubmit()" [formGroup] = "infoUser">
             
             <div class="mb-3">
-                <label class="form-label">Tài Khoản</label>
-                <input type="text" class="form-control" name="name" #name ngModel required  formControlName="name"/>
+                <label class="form-label">Tên</label>
+                <input type="text" class="form-control" name="name" formControlName="name"/>
                 <div *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)">
                     <div *ngIf="f.name.errors">
                         <div *ngIf="f.name.errors.required">
@@ -39,11 +39,28 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" #email ngModel  [pattern]="emailPattern" required formControlName="email"/>
+                <input type="email" class="form-control" name="email"  formControlName="email"/>
                 <div *ngIf="f.email.invalid && (f.email.dirty || f.email.touched)">
                     <div *ngIf="f.email.errors">
                         <div *ngIf="f.email.errors.required">
                             <span>Bạn chưa nhập email</span>
+                        </div>
+                        <div *ngIf="f.email.errors.pattern">
+                            <span>Không đúng định dạng Email</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label class="form-label">Mật Khẩu</label>
+                <input type="password" class="form-control" name="name" formControlName="password"/>
+                <div *ngIf="f.password.invalid && (f.password.dirty || f.password.touched)">
+                    <div *ngIf="f.password.errors">
+                        <div *ngIf="f.password.errors.required">
+                            <span>Bạn chưa nhập Mật Khẩu</span>
                         </div>
                         
                     </div>

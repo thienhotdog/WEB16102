@@ -21,7 +21,6 @@ export class QuizComponent implements OnInit {
   seconds: number = 0;
   time: any;
   constructor(private QuizService: QuizService, private UserService: UserService, private route: Router) { 
-    
   }
   timeOut(){
     return Math.floor(this.seconds/3600) + ':' + Math.floor(this.seconds / 60) + ':' + Math.floor(this.seconds % 60)
@@ -34,7 +33,6 @@ export class QuizComponent implements OnInit {
        this.startTime();
     })
   }
-  
   checkAnswer(option: boolean){
     console.log(option);
     this.curentQuiz++;
@@ -57,7 +55,4 @@ export class QuizComponent implements OnInit {
       localStorage.setItem('setiem', this.seconds.toString());
     }, 1000);
   }
-  
- 
-
 }

@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:'register', component: RegisterComponent},
   {path: 'quiz', component: QuizComponent , canActivate: [AuthGuard]},
   {path: 'result', component: ResultComponent, canActivate: [AuthGuard]},
-  {path: 'sigin', component: SiginComponent},
+  {path: 'signin', component: SiginComponent},
   {path: 'signup', component: SingupComponent}
 ];
 

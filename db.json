@@ -261,69 +261,11 @@
       ]
     }
   ],
-  "userss": [
-    {
-      "name": "Quang Hieu",
-      "email": "thienhotdog@gmail.com",
-      "id": 1
-    },
-    {
-      "name": "Quang Hieu đẹp trai",
-      "email": "thienhotdog@gmail.com",
-      "id": 2
-    },
-    {
-      "name": "Quang Hieu",
-      "email": "thienhotdog@gmail.com",
-      "id": 3
-    },
-    {
-      "name": "Quang Hieu đẹp trai",
-      "email": "thienhotdog@gmail.com",
-      "id": 4
-    },
-    {
-      "name": "Quang Hieu",
-      "email": "thienhotdog@gmail.com",
-      "id": 5
-    }
+  "guests": [
+
   ],
   "users": [],
-  "usersUpdate": [
-    {
-      "name": "Quang Hieu",
-      "email": "thienhotdog@gmail.com",
-      "id": 1,
-      "question": 10,
-      "setiem": "0:0:5"
-    },
-    {
-      "name": "Quang Hieu đẹp trai",
-      "email": "thienhotdog@gmail.com",
-      "id": 2,
-      "question": 9,
-      "setiem": "0:0:4"
-    },
-    {
-      "name": "Quang Hieu",
-      "email": "thienhotdog@gmail.com",
-      "id": 3,
-      "question": 0,
-      "setiem": "0:0:2"
-    },
-    {
-      "name": "Quang Hieu đẹp trai",
-      "email": "thienhotdog@gmail.com",
-      "id": 4,
-      "question": 10,
-      "setiem": "0:0:38"
-    },
-    {
-      "name": "Quang Hieu",
-      "email": "thienhotdog@gmail.com",
-      "id": 5,
-      "question": 10,
-      "setiem": "0:0:4"
-    }
+  "guestsUpdate": [
+
   ]
 }

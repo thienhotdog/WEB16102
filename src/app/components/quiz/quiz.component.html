@@ -60,9 +60,9 @@
 				<h2 id="quesiton">{{questions[curentQuiz].question}}</h2>
 					<p>{{curentQuiz +1}} trên {{questions.length}} </p>
 					<div  *ngFor="let item of questions[curentQuiz].answer">
-						<div class="choice-container">
+						<div class="choice-container" (click)="checkAnswer(item.correct)">
 							<p class="choice-prefix">{{item.answers}}</p>		
-							<button type="submit"  (click)="checkAnswer(item.correct)" class="choice-text" [disabled]="answerSelected">{{item.options}}</button>
+							<button type="submit"  class="choice-text" >{{item.options}}</button>
 						</div>
 					</div>
 			</div>
