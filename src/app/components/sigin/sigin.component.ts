@@ -26,7 +26,7 @@ export class SiginComponent implements OnInit {
 
   Onsubmit(){
     this.UserService.loginUser(this.infoUser.value).subscribe(data =>{
-      console.log(data.user);
+      console.log(data);
       alert('đăng nhập thành công')
       localStorage.clear();
       localStorage.setItem('userss', JSON.stringify(data.user));

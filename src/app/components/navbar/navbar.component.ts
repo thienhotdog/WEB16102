@@ -38,8 +38,9 @@ export class NavbarComponent implements OnInit {
     var body = JSON.parse(localStorage.getItem('userss') || "[]");
     body.question = 0 + this.getQuestion();
     body.setiem = this.getTime();
+    body.id = null;
     console.log(body)
-    let listUrl =  `${environment.apiUrl}/usersUpdate`
+    let listUrl =  `${environment.apiUrl}/guestsUpdate`
     return this.http.post(listUrl, body); 
   }
 }
